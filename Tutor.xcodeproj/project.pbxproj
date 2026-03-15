@@ -1,0 +1,910 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0431341E638FCFB5BDF7ACD3 /* TutorWorkspaces in Frameworks */ = {isa = PBXBuildFile; productRef = C14147BC5930DAAEC83D5C5F /* TutorWorkspaces */; };
+		09861B438FD1DD5287A0229C /* TutorJournal in Frameworks */ = {isa = PBXBuildFile; productRef = 06BF917D40206D0B4CDEF87E /* TutorJournal */; };
+		0B7C5541605E26D5185EF1ED /* TutorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84468EF58478041B9BD4E34 /* TutorAppTests.swift */; };
+		0C79558B9007F4EADA3B504C /* WorkspaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7832EE041DC408EB71DA25 /* WorkspaceListView.swift */; };
+		15FB4B78D68E94CDA5CCADF6 /* TutorKnowledge in Frameworks */ = {isa = PBXBuildFile; productRef = 304B383D1F914B2C1A4D5D98 /* TutorKnowledge */; };
+		1754D1A63C03B3B8249D8974 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BBE8935934806F9C143AB /* UploadView.swift */; };
+		181E9B010AE94455A0A223B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686B3F36AD243A87EB5F558 /* ContentView.swift */; };
+		1F0A0346924E07AB7D638D50 /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046B5E8B63C32818FCE1443 /* ProfileSettingsView.swift */; };
+		21A6BADA2C5152A12896F7AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686B3F36AD243A87EB5F558 /* ContentView.swift */; };
+		230A2E6BE1CBD64AECC3A453 /* WorkspaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFC2AC524ED8E476857D3F /* WorkspaceDetailView.swift */; };
+		245728FB905DB907740F55CC /* TutorGamification in Frameworks */ = {isa = PBXBuildFile; productRef = 87F9E51275C87FA40DB76E74 /* TutorGamification */; };
+		2946C084F09FCB6789F25DFF /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046B5E8B63C32818FCE1443 /* ProfileSettingsView.swift */; };
+		2B48A0FBAF458A1E082DAF70 /* TutorData in Frameworks */ = {isa = PBXBuildFile; productRef = 3530F27CEB681E4DC48AF398 /* TutorData */; };
+		2E5E607527AB2B7ACDCC4628 /* TutorData in Frameworks */ = {isa = PBXBuildFile; productRef = 8B41E4FEB729131C5EBFFFDD /* TutorData */; };
+		2F1C440CC3DDE3BAD5ED00FE /* WorkspaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7832EE041DC408EB71DA25 /* WorkspaceListView.swift */; };
+		302576CD9B16E01ED8D700C5 /* TutorFileProcessing in Frameworks */ = {isa = PBXBuildFile; productRef = AC473D0280E9CF156D76BF61 /* TutorFileProcessing */; };
+		3D2DFF14AE7309681521B7BC /* TutorFileProcessing in Frameworks */ = {isa = PBXBuildFile; productRef = FF2F5DAE2130434180C6D84C /* TutorFileProcessing */; };
+		3DFCBF7C4A931B7CC2AA4736 /* TutorIntegrations in Frameworks */ = {isa = PBXBuildFile; productRef = 744BB51028456668A2C55C82 /* TutorIntegrations */; };
+		440E4F6E5A8CB73DB750B01C /* TutorChat in Frameworks */ = {isa = PBXBuildFile; productRef = DCB10FD9ECBAD15BE211DDED /* TutorChat */; };
+		457B850980BBE9EC64DF720B /* TutorStudent in Frameworks */ = {isa = PBXBuildFile; productRef = C4073B95F0F4DA70FF72A903 /* TutorStudent */; };
+		48E815BE1F67961172041253 /* KnowledgeItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5063417A38542F3CAA197 /* KnowledgeItemRow.swift */; };
+		53FEA6E74883ADB71EA244C8 /* KnowledgeItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5063417A38542F3CAA197 /* KnowledgeItemRow.swift */; };
+		5B8EA993C5E21FA56FAC8A91 /* TutorStudent in Frameworks */ = {isa = PBXBuildFile; productRef = 215DD621CC272DC0E61BB682 /* TutorStudent */; };
+		632D5A92762FA455B53390FD /* TutorKnowledge in Frameworks */ = {isa = PBXBuildFile; productRef = C925CD5297942D2EB9D4437A /* TutorKnowledge */; };
+		64EE8E5F8C6E2041003805D4 /* HomeDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE43C652CCEE8C1BE79947 /* HomeDashboardView.swift */; };
+		708ABA82D142B56042E56E26 /* TutorJournal in Frameworks */ = {isa = PBXBuildFile; productRef = F6CDFBD68189504C043D519B /* TutorJournal */; };
+		76E26B9F27B246E91A58D757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B710E0982FCB9B3BC59F6EF7 /* Assets.xcassets */; };
+		77C270DB3D59875CF4FF0785 /* TutorChat in Frameworks */ = {isa = PBXBuildFile; productRef = B21F5571B37FCED79FEC6181 /* TutorChat */; };
+		7DB4608AAF495D6C25B92781 /* TutorData in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB5E5631A876E40FDB1E258 /* TutorData */; };
+		7F99293149E8FAEA3483D89A /* HomeDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE43C652CCEE8C1BE79947 /* HomeDashboardView.swift */; };
+		8074B1ADC15144B1167C5046 /* TutorGamification in Frameworks */ = {isa = PBXBuildFile; productRef = ECDE93F7F008AC2792B77BD6 /* TutorGamification */; };
+		84CE95CD6926BB306A640522 /* ChatConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C06BB3604CAE6E446A79C /* ChatConversationView.swift */; };
+		8AA5D880FA5C66B090C0E025 /* TutorWorkspaces in Frameworks */ = {isa = PBXBuildFile; productRef = A940B04B08EFDDBDEEFB5CE6 /* TutorWorkspaces */; };
+		8CF885FEC98E551CB7B48F8E /* TutorAI in Frameworks */ = {isa = PBXBuildFile; productRef = C33A466E75319A4400CB3C5D /* TutorAI */; };
+		8DF21BA36A10E319A467877D /* TutorCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D9A83C908BA650A4DD86BD4 /* TutorCore */; };
+		93C1DF7B599E44FB3449F025 /* TutorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70501DE2C59E2C212E11604E /* TutorApp.swift */; };
+		9A642D35316B906CF5DD1F97 /* TutorCore in Frameworks */ = {isa = PBXBuildFile; productRef = F9C4C3B7885C42E56E203CE1 /* TutorCore */; };
+		A64581A4B9C9B0174410FAB8 /* TutorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70501DE2C59E2C212E11604E /* TutorApp.swift */; };
+		B0F94A8E226B4E016753D564 /* TutorUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4178A6AD255D032830347278 /* TutorUI */; };
+		B9B91D4CBB021556AEE735B4 /* TutorLife in Frameworks */ = {isa = PBXBuildFile; productRef = 131EF5E3A49DA9FD7E5D36CF /* TutorLife */; };
+		BF74A401AE9D205F70EDE890 /* TutorAI in Frameworks */ = {isa = PBXBuildFile; productRef = 119B803D374FAD5584072076 /* TutorAI */; };
+		D23FCE37A679203E094F6858 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BBE8935934806F9C143AB /* UploadView.swift */; };
+		D313CB79EBAD58081B248FFB /* TutorGamification in Frameworks */ = {isa = PBXBuildFile; productRef = 21EA04EEC35BD59B8623C2C0 /* TutorGamification */; };
+		D4CB47C041713C5775B2A330 /* TutorLearning in Frameworks */ = {isa = PBXBuildFile; productRef = 7006549B5D835341686B297E /* TutorLearning */; };
+		D66EFD35BDAAB16F261A1E81 /* TutorCore in Frameworks */ = {isa = PBXBuildFile; productRef = BFFFF318479DD1D5404BF170 /* TutorCore */; };
+		D8647D0A7D2ADC5ACCC842FD /* TutorIntegrations in Frameworks */ = {isa = PBXBuildFile; productRef = 3C1A15A11B7137EE709C72E9 /* TutorIntegrations */; };
+		DF803D8649C1577E66DAAE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B710E0982FCB9B3BC59F6EF7 /* Assets.xcassets */; };
+		E25418F638DF0454C4EE3E06 /* TutorUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2352A0E7E8711E924802AE4F /* TutorUI */; };
+		E3B424743152A4EF916DB8A0 /* TutorLife in Frameworks */ = {isa = PBXBuildFile; productRef = A3C0F9A859AE5040230E2FE0 /* TutorLife */; };
+		E9790DA95E9E46B41A118384 /* WorkspaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFC2AC524ED8E476857D3F /* WorkspaceDetailView.swift */; };
+		F2E4A9824BDE4C90E0EFA01B /* TutorLearning in Frameworks */ = {isa = PBXBuildFile; productRef = 90B390BBC6F4B3B55E8F84C6 /* TutorLearning */; };
+		F525623017252A8F359D31DC /* TutorLearning in Frameworks */ = {isa = PBXBuildFile; productRef = C9E6B7EEC38C2F2D53CB6E5E /* TutorLearning */; };
+		F92DD289ABAD08373096C450 /* ChatConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C06BB3604CAE6E446A79C /* ChatConversationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DB0B925C1849AF642D8CAB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC700D012746535F063E042A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35CDF788649CE5E894EDF706;
+			remoteInfo = "Tutor-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19086057495582094F8AAD07 /* tutor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tutor; path = .; sourceTree = SOURCE_ROOT; };
+		4E4D54CDA3740E93D5DDCFD2 /* Tutor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tutor.entitlements; sourceTree = "<group>"; };
+		4EE82B8578A7781046687103 /* Tutor-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Tutor-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7832EE041DC408EB71DA25 /* WorkspaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceListView.swift; sourceTree = "<group>"; };
+		6C2C06BB3604CAE6E446A79C /* ChatConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConversationView.swift; sourceTree = "<group>"; };
+		70501DE2C59E2C212E11604E /* TutorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorApp.swift; sourceTree = "<group>"; };
+		7686B3F36AD243A87EB5F558 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7AD5063417A38542F3CAA197 /* KnowledgeItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeItemRow.swift; sourceTree = "<group>"; };
+		8046B5E8B63C32818FCE1443 /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
+		84CE43C652CCEE8C1BE79947 /* HomeDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDashboardView.swift; sourceTree = "<group>"; };
+		8BFFC2AC524ED8E476857D3F /* WorkspaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceDetailView.swift; sourceTree = "<group>"; };
+		8C3BBE8935934806F9C143AB /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
+		965923250E3FBB5429AC70A2 /* Tutor-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tutor-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B710E0982FCB9B3BC59F6EF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B84468EF58478041B9BD4E34 /* TutorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorAppTests.swift; sourceTree = "<group>"; };
+		BBC2B9D6845B18FCACFC047C /* TutorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TutorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61B466507F3144DA85C45C5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66EFD35BDAAB16F261A1E81 /* TutorCore in Frameworks */,
+				2E5E607527AB2B7ACDCC4628 /* TutorData in Frameworks */,
+				BF74A401AE9D205F70EDE890 /* TutorAI in Frameworks */,
+				3D2DFF14AE7309681521B7BC /* TutorFileProcessing in Frameworks */,
+				15FB4B78D68E94CDA5CCADF6 /* TutorKnowledge in Frameworks */,
+				F525623017252A8F359D31DC /* TutorLearning in Frameworks */,
+				245728FB905DB907740F55CC /* TutorGamification in Frameworks */,
+				5B8EA993C5E21FA56FAC8A91 /* TutorStudent in Frameworks */,
+				E3B424743152A4EF916DB8A0 /* TutorLife in Frameworks */,
+				09861B438FD1DD5287A0229C /* TutorJournal in Frameworks */,
+				0431341E638FCFB5BDF7ACD3 /* TutorWorkspaces in Frameworks */,
+				D8647D0A7D2ADC5ACCC842FD /* TutorIntegrations in Frameworks */,
+				440E4F6E5A8CB73DB750B01C /* TutorChat in Frameworks */,
+				E25418F638DF0454C4EE3E06 /* TutorUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		632C23952E04C5EBCE169D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DF21BA36A10E319A467877D /* TutorCore in Frameworks */,
+				7DB4608AAF495D6C25B92781 /* TutorData in Frameworks */,
+				F2E4A9824BDE4C90E0EFA01B /* TutorLearning in Frameworks */,
+				D313CB79EBAD58081B248FFB /* TutorGamification in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D5D44CBAA77A4439247CE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A642D35316B906CF5DD1F97 /* TutorCore in Frameworks */,
+				2B48A0FBAF458A1E082DAF70 /* TutorData in Frameworks */,
+				8CF885FEC98E551CB7B48F8E /* TutorAI in Frameworks */,
+				302576CD9B16E01ED8D700C5 /* TutorFileProcessing in Frameworks */,
+				632D5A92762FA455B53390FD /* TutorKnowledge in Frameworks */,
+				D4CB47C041713C5775B2A330 /* TutorLearning in Frameworks */,
+				8074B1ADC15144B1167C5046 /* TutorGamification in Frameworks */,
+				457B850980BBE9EC64DF720B /* TutorStudent in Frameworks */,
+				B9B91D4CBB021556AEE735B4 /* TutorLife in Frameworks */,
+				708ABA82D142B56042E56E26 /* TutorJournal in Frameworks */,
+				8AA5D880FA5C66B090C0E025 /* TutorWorkspaces in Frameworks */,
+				3DFCBF7C4A931B7CC2AA4736 /* TutorIntegrations in Frameworks */,
+				77C270DB3D59875CF4FF0785 /* TutorChat in Frameworks */,
+				B0F94A8E226B4E016753D564 /* TutorUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02759315B4D9BC0E86BC05A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EE82B8578A7781046687103 /* Tutor-iOS.app */,
+				965923250E3FBB5429AC70A2 /* Tutor-macOS.app */,
+				BBC2B9D6845B18FCACFC047C /* TutorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04ABA30B9D91F1E3C47226A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A61BE48BDD38AD0567E444B /* Chat */,
+				A139D1B2C4E7083545671EC2 /* Home */,
+				BF90142AD89CA72F5AA2FF84 /* Profile */,
+				D0FD636C5C06CA70A444CD97 /* Upload */,
+				ADB39A5A6555FD0807E487A7 /* Workspaces */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F32C5FB81A125A1CBA4E4C5 = {
+			isa = PBXGroup;
+			children = (
+				B856491C2B6CD60606C8DD94 /* Packages */,
+				A65409F28ECEC08DD0AD8403 /* Tests */,
+				89D507D2DF9F5255AA5D57B4 /* TutorApp */,
+				02759315B4D9BC0E86BC05A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A61BE48BDD38AD0567E444B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				6C2C06BB3604CAE6E446A79C /* ChatConversationView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		89D507D2DF9F5255AA5D57B4 /* TutorApp */ = {
+			isa = PBXGroup;
+			children = (
+				DD021EDD310D8F3CD7E6136C /* Entitlements */,
+				04ABA30B9D91F1E3C47226A2 /* Views */,
+				B710E0982FCB9B3BC59F6EF7 /* Assets.xcassets */,
+				7686B3F36AD243A87EB5F558 /* ContentView.swift */,
+				70501DE2C59E2C212E11604E /* TutorApp.swift */,
+			);
+			path = TutorApp;
+			sourceTree = "<group>";
+		};
+		A139D1B2C4E7083545671EC2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84CE43C652CCEE8C1BE79947 /* HomeDashboardView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A65409F28ECEC08DD0AD8403 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B84468EF58478041B9BD4E34 /* TutorAppTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		ADB39A5A6555FD0807E487A7 /* Workspaces */ = {
+			isa = PBXGroup;
+			children = (
+				8BFFC2AC524ED8E476857D3F /* WorkspaceDetailView.swift */,
+				5E7832EE041DC408EB71DA25 /* WorkspaceListView.swift */,
+			);
+			path = Workspaces;
+			sourceTree = "<group>";
+		};
+		B856491C2B6CD60606C8DD94 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				19086057495582094F8AAD07 /* tutor */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		BF90142AD89CA72F5AA2FF84 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8046B5E8B63C32818FCE1443 /* ProfileSettingsView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D0FD636C5C06CA70A444CD97 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				7AD5063417A38542F3CAA197 /* KnowledgeItemRow.swift */,
+				8C3BBE8935934806F9C143AB /* UploadView.swift */,
+			);
+			path = Upload;
+			sourceTree = "<group>";
+		};
+		DD021EDD310D8F3CD7E6136C /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				4E4D54CDA3740E93D5DDCFD2 /* Tutor.entitlements */,
+			);
+			path = Entitlements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35CDF788649CE5E894EDF706 /* Tutor-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAED4C8C436C0B88C45EA66 /* Build configuration list for PBXNativeTarget "Tutor-macOS" */;
+			buildPhases = (
+				5C7A5C866796AE2B8F290582 /* Sources */,
+				A7D98BB37AEF95EB7DE24149 /* Resources */,
+				61B466507F3144DA85C45C5E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tutor-macOS";
+			packageProductDependencies = (
+				BFFFF318479DD1D5404BF170 /* TutorCore */,
+				8B41E4FEB729131C5EBFFFDD /* TutorData */,
+				119B803D374FAD5584072076 /* TutorAI */,
+				FF2F5DAE2130434180C6D84C /* TutorFileProcessing */,
+				304B383D1F914B2C1A4D5D98 /* TutorKnowledge */,
+				C9E6B7EEC38C2F2D53CB6E5E /* TutorLearning */,
+				87F9E51275C87FA40DB76E74 /* TutorGamification */,
+				215DD621CC272DC0E61BB682 /* TutorStudent */,
+				A3C0F9A859AE5040230E2FE0 /* TutorLife */,
+				06BF917D40206D0B4CDEF87E /* TutorJournal */,
+				C14147BC5930DAAEC83D5C5F /* TutorWorkspaces */,
+				3C1A15A11B7137EE709C72E9 /* TutorIntegrations */,
+				DCB10FD9ECBAD15BE211DDED /* TutorChat */,
+				2352A0E7E8711E924802AE4F /* TutorUI */,
+			);
+			productName = "Tutor-macOS";
+			productReference = 965923250E3FBB5429AC70A2 /* Tutor-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C5238ABED351C6E43542ECB /* TutorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E33314555DF48D45BD6F48EB /* Build configuration list for PBXNativeTarget "TutorTests" */;
+			buildPhases = (
+				ACEA1811B0D9894D005A00E5 /* Sources */,
+				632C23952E04C5EBCE169D33 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44EEE475DD33F2728E049CF0 /* PBXTargetDependency */,
+			);
+			name = TutorTests;
+			packageProductDependencies = (
+				6D9A83C908BA650A4DD86BD4 /* TutorCore */,
+				7BB5E5631A876E40FDB1E258 /* TutorData */,
+				90B390BBC6F4B3B55E8F84C6 /* TutorLearning */,
+				21EA04EEC35BD59B8623C2C0 /* TutorGamification */,
+			);
+			productName = TutorTests;
+			productReference = BBC2B9D6845B18FCACFC047C /* TutorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB8FF23D3289D1466B5FDCDB /* Tutor-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D57E580CE6AE391AE46D9D29 /* Build configuration list for PBXNativeTarget "Tutor-iOS" */;
+			buildPhases = (
+				8D2DC8BB8662AFF99EFDC49E /* Sources */,
+				2821373848C7A92B1585770E /* Resources */,
+				F2D5D44CBAA77A4439247CE3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tutor-iOS";
+			packageProductDependencies = (
+				F9C4C3B7885C42E56E203CE1 /* TutorCore */,
+				3530F27CEB681E4DC48AF398 /* TutorData */,
+				C33A466E75319A4400CB3C5D /* TutorAI */,
+				AC473D0280E9CF156D76BF61 /* TutorFileProcessing */,
+				C925CD5297942D2EB9D4437A /* TutorKnowledge */,
+				7006549B5D835341686B297E /* TutorLearning */,
+				ECDE93F7F008AC2792B77BD6 /* TutorGamification */,
+				C4073B95F0F4DA70FF72A903 /* TutorStudent */,
+				131EF5E3A49DA9FD7E5D36CF /* TutorLife */,
+				F6CDFBD68189504C043D519B /* TutorJournal */,
+				A940B04B08EFDDBDEEFB5CE6 /* TutorWorkspaces */,
+				744BB51028456668A2C55C82 /* TutorIntegrations */,
+				B21F5571B37FCED79FEC6181 /* TutorChat */,
+				4178A6AD255D032830347278 /* TutorUI */,
+			);
+			productName = "Tutor-iOS";
+			productReference = 4EE82B8578A7781046687103 /* Tutor-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC700D012746535F063E042A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					35CDF788649CE5E894EDF706 = {
+						ProvisioningStyle = Automatic;
+					};
+					8C5238ABED351C6E43542ECB = {
+						ProvisioningStyle = Automatic;
+					};
+					BB8FF23D3289D1466B5FDCDB = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 74836D3EDEEC57D713E26D63 /* Build configuration list for PBXProject "Tutor" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2F32C5FB81A125A1CBA4E4C5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1D801AA90861DCD779C3BD9C /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 02759315B4D9BC0E86BC05A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB8FF23D3289D1466B5FDCDB /* Tutor-iOS */,
+				35CDF788649CE5E894EDF706 /* Tutor-macOS */,
+				8C5238ABED351C6E43542ECB /* TutorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2821373848C7A92B1585770E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76E26B9F27B246E91A58D757 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D98BB37AEF95EB7DE24149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF803D8649C1577E66DAAE61 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C7A5C866796AE2B8F290582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CE95CD6926BB306A640522 /* ChatConversationView.swift in Sources */,
+				181E9B010AE94455A0A223B4 /* ContentView.swift in Sources */,
+				7F99293149E8FAEA3483D89A /* HomeDashboardView.swift in Sources */,
+				53FEA6E74883ADB71EA244C8 /* KnowledgeItemRow.swift in Sources */,
+				2946C084F09FCB6789F25DFF /* ProfileSettingsView.swift in Sources */,
+				93C1DF7B599E44FB3449F025 /* TutorApp.swift in Sources */,
+				1754D1A63C03B3B8249D8974 /* UploadView.swift in Sources */,
+				E9790DA95E9E46B41A118384 /* WorkspaceDetailView.swift in Sources */,
+				0C79558B9007F4EADA3B504C /* WorkspaceListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D2DC8BB8662AFF99EFDC49E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92DD289ABAD08373096C450 /* ChatConversationView.swift in Sources */,
+				21A6BADA2C5152A12896F7AF /* ContentView.swift in Sources */,
+				64EE8E5F8C6E2041003805D4 /* HomeDashboardView.swift in Sources */,
+				48E815BE1F67961172041253 /* KnowledgeItemRow.swift in Sources */,
+				1F0A0346924E07AB7D638D50 /* ProfileSettingsView.swift in Sources */,
+				A64581A4B9C9B0174410FAB8 /* TutorApp.swift in Sources */,
+				D23FCE37A679203E094F6858 /* UploadView.swift in Sources */,
+				230A2E6BE1CBD64AECC3A453 /* WorkspaceDetailView.swift in Sources */,
+				2F1C440CC3DDE3BAD5ED00FE /* WorkspaceListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACEA1811B0D9894D005A00E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B7C5541605E26D5185EF1ED /* TutorAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44EEE475DD33F2728E049CF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35CDF788649CE5E894EDF706 /* Tutor-macOS */;
+			targetProxy = 2DB0B925C1849AF642D8CAB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12A0D2A042C74EBA95ED45E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutor.TutorTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tutor-macOS.app/Contents/MacOS/Tutor-macOS";
+			};
+			name = Debug;
+		};
+		1BF53892DEFD34E5858EA60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TutorApp/Entitlements/Tutor.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Tutor;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutor.app;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		227F21497E245A0952217A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		3D9EBE0926695149FB315306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TutorApp/Entitlements/Tutor.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Tutor;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutor.app;
+				SDKROOT = macosx;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		5E4628BF4783E0B4E1FB426C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TutorApp/Entitlements/Tutor.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Tutor;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutor.app;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A34DA482D79DE7394366B5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		C50FA73030793E1958031ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutor.TutorTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tutor-macOS.app/Contents/MacOS/Tutor-macOS";
+			};
+			name = Release;
+		};
+		F74C3B62DABB89E21B26B22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TutorApp/Entitlements/Tutor.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Tutor;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tutor.app;
+				SDKROOT = macosx;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BAED4C8C436C0B88C45EA66 /* Build configuration list for PBXNativeTarget "Tutor-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74C3B62DABB89E21B26B22D /* Debug */,
+				3D9EBE0926695149FB315306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		74836D3EDEEC57D713E26D63 /* Build configuration list for PBXProject "Tutor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34DA482D79DE7394366B5AC /* Debug */,
+				227F21497E245A0952217A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D57E580CE6AE391AE46D9D29 /* Build configuration list for PBXNativeTarget "Tutor-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4628BF4783E0B4E1FB426C /* Debug */,
+				1BF53892DEFD34E5858EA60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E33314555DF48D45BD6F48EB /* Build configuration list for PBXNativeTarget "TutorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12A0D2A042C74EBA95ED45E2 /* Debug */,
+				C50FA73030793E1958031ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1D801AA90861DCD779C3BD9C /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06BF917D40206D0B4CDEF87E /* TutorJournal */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorJournal;
+		};
+		119B803D374FAD5584072076 /* TutorAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorAI;
+		};
+		131EF5E3A49DA9FD7E5D36CF /* TutorLife */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorLife;
+		};
+		215DD621CC272DC0E61BB682 /* TutorStudent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorStudent;
+		};
+		21EA04EEC35BD59B8623C2C0 /* TutorGamification */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorGamification;
+		};
+		2352A0E7E8711E924802AE4F /* TutorUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorUI;
+		};
+		304B383D1F914B2C1A4D5D98 /* TutorKnowledge */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorKnowledge;
+		};
+		3530F27CEB681E4DC48AF398 /* TutorData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorData;
+		};
+		3C1A15A11B7137EE709C72E9 /* TutorIntegrations */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorIntegrations;
+		};
+		4178A6AD255D032830347278 /* TutorUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorUI;
+		};
+		6D9A83C908BA650A4DD86BD4 /* TutorCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorCore;
+		};
+		7006549B5D835341686B297E /* TutorLearning */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorLearning;
+		};
+		744BB51028456668A2C55C82 /* TutorIntegrations */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorIntegrations;
+		};
+		7BB5E5631A876E40FDB1E258 /* TutorData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorData;
+		};
+		87F9E51275C87FA40DB76E74 /* TutorGamification */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorGamification;
+		};
+		8B41E4FEB729131C5EBFFFDD /* TutorData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorData;
+		};
+		90B390BBC6F4B3B55E8F84C6 /* TutorLearning */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorLearning;
+		};
+		A3C0F9A859AE5040230E2FE0 /* TutorLife */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorLife;
+		};
+		A940B04B08EFDDBDEEFB5CE6 /* TutorWorkspaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorWorkspaces;
+		};
+		AC473D0280E9CF156D76BF61 /* TutorFileProcessing */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorFileProcessing;
+		};
+		B21F5571B37FCED79FEC6181 /* TutorChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorChat;
+		};
+		BFFFF318479DD1D5404BF170 /* TutorCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorCore;
+		};
+		C14147BC5930DAAEC83D5C5F /* TutorWorkspaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorWorkspaces;
+		};
+		C33A466E75319A4400CB3C5D /* TutorAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorAI;
+		};
+		C4073B95F0F4DA70FF72A903 /* TutorStudent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorStudent;
+		};
+		C925CD5297942D2EB9D4437A /* TutorKnowledge */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorKnowledge;
+		};
+		C9E6B7EEC38C2F2D53CB6E5E /* TutorLearning */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorLearning;
+		};
+		DCB10FD9ECBAD15BE211DDED /* TutorChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorChat;
+		};
+		ECDE93F7F008AC2792B77BD6 /* TutorGamification */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorGamification;
+		};
+		F6CDFBD68189504C043D519B /* TutorJournal */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorJournal;
+		};
+		F9C4C3B7885C42E56E203CE1 /* TutorCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorCore;
+		};
+		FF2F5DAE2130434180C6D84C /* TutorFileProcessing */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TutorFileProcessing;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CC700D012746535F063E042A /* Project object */;
+}

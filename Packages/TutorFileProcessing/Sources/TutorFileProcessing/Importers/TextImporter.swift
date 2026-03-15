@@ -48,13 +48,15 @@ public final class TextImporter: FileImporter, @unchecked Sendable {
             return attributed.string
         }
 
-        // Try as Word document
+        #if os(macOS)
+        // Try as Word document (macOS only)
         let docOptions: [NSAttributedString.DocumentReadingOptionKey: Any] = [
             .documentType: NSAttributedString.DocumentType.docFormat
         ]
         if let attributed = try? NSAttributedString(url: url, options: docOptions, documentAttributes: nil) {
             return attributed.string
         }
+        #endif
 
         // Final fallback: try raw text
         return try String(contentsOf: url, encoding: .utf8)

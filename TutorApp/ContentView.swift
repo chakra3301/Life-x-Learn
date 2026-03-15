@@ -23,7 +23,7 @@ struct ContentView: View {
 
     private var iOSLayout: some View {
         TabView(selection: $selectedTab) {
-            HomeView()
+            HomeDashboardView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
@@ -35,19 +35,19 @@ struct ContentView: View {
                 }
                 .tag(AppTab.learn)
 
-            WorkspacesView()
+            WorkspaceListView()
                 .tabItem {
                     Label("Spaces", systemImage: "square.grid.2x2")
                 }
                 .tag(AppTab.workspaces)
 
-            ChatView()
+            ChatConversationView()
                 .tabItem {
                     Label("Chat", systemImage: "bubble.left.and.bubble.right")
                 }
                 .tag(AppTab.chat)
 
-            ProfileView()
+            ProfileSettingsView()
                 .tabItem {
                     Label("Profile", systemImage: "person.circle")
                 }
@@ -68,11 +68,11 @@ struct ContentView: View {
             .listStyle(.sidebar)
         } detail: {
             switch selectedSidebarItem ?? .home {
-            case .home: HomeView()
+            case .home: HomeDashboardView()
             case .learn: LearnView()
-            case .workspaces: WorkspacesView()
-            case .chat: ChatView()
-            case .profile: ProfileView()
+            case .workspaces: WorkspaceListView()
+            case .chat: ChatConversationView()
+            case .profile: ProfileSettingsView()
             }
         }
     }
@@ -110,43 +110,84 @@ enum AppTab: String, CaseIterable, Identifiable {
     }
 }
 
-// MARK: - Placeholder Views
+// MARK: - Learn View (Phase 2 placeholder with structure)
 
-struct HomeView: View {
+struct LearnView: View {
     @Environment(\.tutorTheme) private var theme
+
+    @Query(sort: \Flashcard.dueDate) private var allCards: [Flashcard]
+
+    private var dueCards: [Flashcard] {
+        allCards.filter { $0.isDue }
+    }
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: TutorSpacing.lg) {
-                    // Welcome header
+                    // Due flashcards
                     GlassCard {
-                        VStack(alignment: .leading, spacing: TutorSpacing.sm) {
-                            Text("Welcome back")
-                                .font(TutorTypography.title2)
-                                .foregroundStyle(theme.textPrimary)
-                            Text("Ready to learn something new?")
-                                .font(TutorTypography.body)
+                        HStack {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Label("Flashcards", systemImage: "rectangle.on.rectangle")
+                                    .font(TutorTypography.headline)
+                                Text("\(dueCards.count) cards due for review")
+                                    .font(TutorTypography.caption)
+                                    .foregroundStyle(theme.textSecondary)
+                            }
+                            Spacer()
+                            Image(systemName: "chevron.right")
                                 .foregroundStyle(theme.textSecondary)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
 
-                    // Quick stats
-                    HStack(spacing: TutorSpacing.md) {
-                        StatBadge(icon: "flame.fill", value: "0", label: "Streak", color: TutorColors.streakFlame)
-                        StatBadge(icon: "star.fill", value: "0", label: "XP", color: TutorColors.xpGold)
-                        StatBadge(icon: "chart.bar.fill", value: "1", label: "Level", color: TutorColors.levelPurple)
-                    }
-                    .padding(.horizontal)
-
-                    // Daily lesson card
+                    // Quiz
                     GlassCard {
-                        VStack(alignment: .leading, spacing: TutorSpacing.sm) {
-                            Label("Daily Lesson", systemImage: "book.fill")
-                                .font(TutorTypography.headline)
-                            Text("Upload your first material to get started")
-                                .font(TutorTypography.body)
+                        HStack {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Label("Practice Quiz", systemImage: "checklist")
+                                    .font(TutorTypography.headline)
+                                Text("Test your knowledge")
+                                    .font(TutorTypography.caption)
+                                    .foregroundStyle(theme.textSecondary)
+                            }
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundStyle(theme.textSecondary)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+
+                    // Writing practice
+                    GlassCard {
+                        HStack {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Label("Writing Practice", systemImage: "pencil.line")
+                                    .font(TutorTypography.headline)
+                                Text("Improve your writing skills")
+                                    .font(TutorTypography.caption)
+                                    .foregroundStyle(theme.textSecondary)
+                            }
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundStyle(theme.textSecondary)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+
+                    // Daily lesson
+                    GlassCard {
+                        HStack {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Label("Daily Lesson", systemImage: "book.fill")
+                                    .font(TutorTypography.headline)
+                                Text("Your personalized daily review")
+                                    .font(TutorTypography.caption)
+                                    .foregroundStyle(theme.textSecondary)
+                            }
+                            Spacer()
+                            Image(systemName: "chevron.right")
                                 .foregroundStyle(theme.textSecondary)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -155,79 +196,7 @@ struct HomeView: View {
                 .padding()
             }
             .background(theme.background)
-            .navigationTitle("Home")
-        }
-    }
-}
-
-struct LearnView: View {
-    var body: some View {
-        NavigationStack {
-            VStack(spacing: TutorSpacing.lg) {
-                Image(systemName: "brain.head.profile")
-                    .font(.system(size: 60))
-                    .foregroundStyle(.secondary)
-                Text("Your learning tools will appear here")
-                    .font(TutorTypography.headline)
-                Text("Flashcards, quizzes, daily lessons, and more")
-                    .font(TutorTypography.body)
-                    .foregroundStyle(.secondary)
-            }
             .navigationTitle("Learn")
-        }
-    }
-}
-
-struct WorkspacesView: View {
-    var body: some View {
-        NavigationStack {
-            VStack(spacing: TutorSpacing.lg) {
-                Image(systemName: "square.grid.2x2")
-                    .font(.system(size: 60))
-                    .foregroundStyle(.secondary)
-                Text("No workspaces yet")
-                    .font(TutorTypography.headline)
-                Text("Create a workspace to organize your learning")
-                    .font(TutorTypography.body)
-                    .foregroundStyle(.secondary)
-            }
-            .navigationTitle("Workspaces")
-        }
-    }
-}
-
-struct ChatView: View {
-    var body: some View {
-        NavigationStack {
-            VStack(spacing: TutorSpacing.lg) {
-                Image(systemName: "bubble.left.and.bubble.right")
-                    .font(.system(size: 60))
-                    .foregroundStyle(.secondary)
-                Text("Chat with your AI tutor")
-                    .font(TutorTypography.headline)
-                Text("Ask questions about anything you've uploaded")
-                    .font(TutorTypography.body)
-                    .foregroundStyle(.secondary)
-            }
-            .navigationTitle("Chat")
-        }
-    }
-}
-
-struct ProfileView: View {
-    var body: some View {
-        NavigationStack {
-            VStack(spacing: TutorSpacing.lg) {
-                Image(systemName: "person.circle")
-                    .font(.system(size: 60))
-                    .foregroundStyle(.secondary)
-                Text("Your Profile")
-                    .font(TutorTypography.headline)
-                Text("Stats, settings, and preferences")
-                    .font(TutorTypography.body)
-                    .foregroundStyle(.secondary)
-            }
-            .navigationTitle("Profile")
         }
     }
 }
