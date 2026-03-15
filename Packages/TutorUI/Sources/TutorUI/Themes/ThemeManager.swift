@@ -28,13 +28,13 @@ public struct MinimalTheme: TutorTheme {
     public let name = "Minimal"
     public let background = Color(hex: "#FAFAFA")
     public let surfacePrimary = Color.white
-    public let surfaceSecondary = Color(hex: "#F5F5F5")
-    public let accentColor = Color(hex: "#1A1A1A")
-    public let textPrimary = Color(hex: "#1A1A1A")
-    public let textSecondary = Color(hex: "#8E8E93")
-    public let cornerRadius: CGFloat = 12
+    public let surfaceSecondary = Color(hex: "#F4F4F5")
+    public let accentColor = Color(hex: "#18181B")
+    public let textPrimary = Color(hex: "#18181B")
+    public let textSecondary = Color(hex: "#71717A")
+    public let cornerRadius: CGFloat = 10
     public let usesGlassMorphism = false
-    public let cardShadow = TutorShadow.sm
+    public let cardShadow = TutorShadow(color: .black.opacity(0.03), radius: 3, x: 0, y: 1)
 
     public init() {}
 }
@@ -43,16 +43,16 @@ public struct MinimalTheme: TutorTheme {
 
 public struct RichTheme: TutorTheme {
     public let type = ThemeType.rich
-    public let name = "Rich & Colorful"
-    public let background = Color(hex: "#F0EDFF")
+    public let name = "Vibrant"
+    public let background = Color(hex: "#F5F3FF")
     public let surfacePrimary = Color.white
-    public let surfaceSecondary = Color(hex: "#E8E4FF")
-    public let accentColor = Color(hex: "#6C5CE7")
-    public let textPrimary = Color(hex: "#2D2D3F")
-    public let textSecondary = Color(hex: "#7C7C8A")
-    public let cornerRadius: CGFloat = 16
+    public let surfaceSecondary = Color(hex: "#EDE9FE")
+    public let accentColor = Color(hex: "#7C3AED")
+    public let textPrimary = Color(hex: "#1E1B4B")
+    public let textSecondary = Color(hex: "#6B7280")
+    public let cornerRadius: CGFloat = 14
     public let usesGlassMorphism = false
-    public let cardShadow = TutorShadow.md
+    public let cardShadow = TutorShadow(color: Color(hex: "#7C3AED").opacity(0.06), radius: 8, x: 0, y: 2)
 
     public init() {}
 }
@@ -62,15 +62,15 @@ public struct RichTheme: TutorTheme {
 public struct LockedInTheme: TutorTheme {
     public let type = ThemeType.lockedIn
     public let name = "Locked In"
-    public let background = Color(hex: "#0A0A0F")
-    public let surfacePrimary = Color(hex: "#1C1C2E")
-    public let surfaceSecondary = Color(hex: "#2A2A40")
-    public let accentColor = Color(hex: "#00D1FF")
-    public let textPrimary = Color.white
-    public let textSecondary = Color(hex: "#9898A6")
+    public let background = Color(hex: "#09090B")
+    public let surfacePrimary = Color(hex: "#18181B")
+    public let surfaceSecondary = Color(hex: "#27272A")
+    public let accentColor = Color(hex: "#38BDF8")
+    public let textPrimary = Color(hex: "#FAFAFA")
+    public let textSecondary = Color(hex: "#A1A1AA")
     public let cornerRadius: CGFloat = 10
     public let usesGlassMorphism = true
-    public let cardShadow = TutorShadow(color: Color(hex: "#00D1FF").opacity(0.1), radius: 12, x: 0, y: 4)
+    public let cardShadow = TutorShadow(color: Color(hex: "#38BDF8").opacity(0.06), radius: 8, x: 0, y: 2)
 
     public init() {}
 }
@@ -79,16 +79,16 @@ public struct LockedInTheme: TutorTheme {
 
 public struct CozyTheme: TutorTheme {
     public let type = ThemeType.cozy
-    public let name = "Warm & Cozy"
-    public let background = Color(hex: "#FFF8F0")
-    public let surfacePrimary = Color(hex: "#FFFDF9")
-    public let surfaceSecondary = Color(hex: "#FFF0DE")
-    public let accentColor = Color(hex: "#D4753A")
-    public let textPrimary = Color(hex: "#3D2E1F")
-    public let textSecondary = Color(hex: "#8B7355")
-    public let cornerRadius: CGFloat = 20
+    public let name = "Cozy"
+    public let background = Color(hex: "#FFFBF5")
+    public let surfacePrimary = Color(hex: "#FFFFFF")
+    public let surfaceSecondary = Color(hex: "#FEF3E2")
+    public let accentColor = Color(hex: "#C2410C")
+    public let textPrimary = Color(hex: "#292524")
+    public let textSecondary = Color(hex: "#78716C")
+    public let cornerRadius: CGFloat = 14
     public let usesGlassMorphism = false
-    public let cardShadow = TutorShadow(color: Color(hex: "#D4753A").opacity(0.08), radius: 10, x: 0, y: 4)
+    public let cardShadow = TutorShadow(color: Color(hex: "#C2410C").opacity(0.04), radius: 6, x: 0, y: 2)
 
     public init() {}
 }

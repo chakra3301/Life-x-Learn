@@ -71,17 +71,15 @@ struct HomeDashboardView: View {
                             .foregroundStyle(theme.textSecondary)
                     }
                     Spacer()
-                    // Mode badge
                     Text(profile?.appMode.rawValue.capitalized ?? "Life")
                         .font(TutorTypography.caption)
                         .padding(.horizontal, TutorSpacing.sm)
                         .padding(.vertical, TutorSpacing.xxs)
-                        .background(theme.accentColor.opacity(0.15))
+                        .background(theme.accentColor.opacity(0.1))
                         .foregroundStyle(theme.accentColor)
                         .clipShape(Capsule())
                 }
 
-                // XP progress
                 if let stats {
                     XPProgressBar(
                         progress: LevelSystem.progress(for: stats.totalXP),
@@ -99,30 +97,30 @@ struct HomeDashboardView: View {
     // MARK: - Stats
 
     private var statsRow: some View {
-        HStack(spacing: TutorSpacing.md) {
+        HStack(spacing: TutorSpacing.sm) {
             StatBadge(
                 icon: "flame.fill",
                 value: "\(stats?.currentStreak ?? 0)",
                 label: "Streak",
-                color: TutorColors.streakFlame
+                color: TutorColors.tintOrange
             )
             StatBadge(
                 icon: "star.fill",
                 value: "\(stats?.totalXP ?? 0)",
                 label: "XP",
-                color: TutorColors.xpGold
+                color: TutorColors.tintAmber
             )
             StatBadge(
                 icon: "chart.bar.fill",
                 value: "Lv.\(stats?.currentLevel ?? 1)",
                 label: "Level",
-                color: TutorColors.levelPurple
+                color: TutorColors.tintViolet
             )
             StatBadge(
                 icon: "clock.fill",
                 value: formatMinutes(stats?.totalStudyMinutes ?? 0),
                 label: "Study",
-                color: TutorColors.primary
+                color: TutorColors.tintBlue
             )
         }
         .frame(maxWidth: .infinity)
@@ -135,7 +133,7 @@ struct HomeDashboardView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
                     Label("\(dueCards.count) cards due", systemImage: "rectangle.on.rectangle")
-                        .font(TutorTypography.headline)
+                        .font(TutorTypography.bodyMedium)
                         .foregroundStyle(theme.textPrimary)
                     Text("Review them to keep your knowledge fresh")
                         .font(TutorTypography.caption)
@@ -143,7 +141,6 @@ struct HomeDashboardView: View {
                 }
                 Spacer()
                 NavigationLink {
-                    // FlashcardReviewView
                     Text("Review session coming soon")
                 } label: {
                     Text("Review")
@@ -164,20 +161,20 @@ struct HomeDashboardView: View {
     private var quickActions: some View {
         VStack(alignment: .leading, spacing: TutorSpacing.sm) {
             Text("Quick Actions")
-                .font(TutorTypography.headline)
-                .foregroundStyle(theme.textPrimary)
+                .font(TutorTypography.bodyMedium)
+                .foregroundStyle(theme.textSecondary)
 
             HStack(spacing: TutorSpacing.sm) {
-                QuickActionButton(icon: "plus", title: "Upload", color: theme.accentColor) {
+                QuickActionButton(icon: "arrow.up.doc", title: "Upload", color: TutorColors.tintBlue) {
                     showUpload = true
                 }
-                QuickActionButton(icon: "rectangle.on.rectangle", title: "Study", color: .blue) {
+                QuickActionButton(icon: "rectangle.on.rectangle", title: "Study", color: TutorColors.tintIndigo) {
                     // Navigate to flashcard review
                 }
-                QuickActionButton(icon: "checklist", title: "Quiz", color: .green) {
+                QuickActionButton(icon: "checklist", title: "Quiz", color: TutorColors.tintEmerald) {
                     // Navigate to quiz
                 }
-                QuickActionButton(icon: "book", title: "Journal", color: .orange) {
+                QuickActionButton(icon: "book.closed", title: "Journal", color: TutorColors.tintAmber) {
                     showJournal = true
                 }
             }
@@ -188,28 +185,25 @@ struct HomeDashboardView: View {
 
     private var recentUploads: some View {
         VStack(alignment: .leading, spacing: TutorSpacing.sm) {
-            HStack {
-                Text("Recent")
-                    .font(TutorTypography.headline)
-                    .foregroundStyle(theme.textPrimary)
-                Spacer()
-            }
+            Text("Recent")
+                .font(TutorTypography.bodyMedium)
+                .foregroundStyle(theme.textSecondary)
 
             if recentItems.isEmpty {
                 GlassCard {
                     VStack(spacing: TutorSpacing.sm) {
                         Image(systemName: "tray")
-                            .font(.title)
-                            .foregroundStyle(theme.textSecondary)
+                            .font(.title2)
+                            .foregroundStyle(theme.textSecondary.opacity(0.5))
                         Text("Nothing uploaded yet")
                             .font(TutorTypography.body)
                             .foregroundStyle(theme.textSecondary)
                         Text("Add your first piece of knowledge to get started")
                             .font(TutorTypography.caption)
-                            .foregroundStyle(theme.textSecondary)
+                            .foregroundStyle(theme.textSecondary.opacity(0.7))
                     }
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical)
+                    .padding(.vertical, TutorSpacing.md)
                 }
             } else {
                 ForEach(Array(recentItems.prefix(5))) { item in
@@ -234,8 +228,8 @@ struct HomeDashboardView: View {
         VStack(alignment: .leading, spacing: TutorSpacing.sm) {
             if !workspaces.isEmpty {
                 Text("Workspaces")
-                    .font(TutorTypography.headline)
-                    .foregroundStyle(theme.textPrimary)
+                    .font(TutorTypography.bodyMedium)
+                    .foregroundStyle(theme.textSecondary)
 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: TutorSpacing.sm) {
@@ -302,14 +296,14 @@ struct QuickActionButton: View {
         Button(action: action) {
             VStack(spacing: TutorSpacing.xs) {
                 Image(systemName: icon)
-                    .font(.title3)
+                    .font(.body)
                     .foregroundStyle(color)
-                    .frame(width: 44, height: 44)
-                    .background(color.opacity(0.12))
-                    .clipShape(Circle())
+                    .frame(width: 40, height: 40)
+                    .background(color.opacity(0.08))
+                    .clipShape(RoundedRectangle(cornerRadius: TutorRadius.md))
                 Text(title)
                     .font(TutorTypography.caption)
-                    .foregroundStyle(theme.textPrimary)
+                    .foregroundStyle(theme.textSecondary)
             }
             .frame(maxWidth: .infinity)
         }
@@ -326,8 +320,11 @@ struct MiniWorkspaceCard: View {
     var body: some View {
         VStack(spacing: TutorSpacing.xs) {
             Image(systemName: workspace.icon)
-                .font(.title2)
+                .font(.title3)
                 .foregroundStyle(Color(hex: workspace.colorHex))
+                .frame(width: 36, height: 36)
+                .background(Color(hex: workspace.colorHex).opacity(0.08))
+                .clipShape(RoundedRectangle(cornerRadius: TutorRadius.sm))
             Text(workspace.name)
                 .font(TutorTypography.caption)
                 .foregroundStyle(theme.textPrimary)
@@ -336,7 +333,7 @@ struct MiniWorkspaceCard: View {
                 .font(TutorTypography.caption2)
                 .foregroundStyle(theme.textSecondary)
         }
-        .frame(width: 90, height: 90)
+        .frame(width: 88, height: 88)
         .background(theme.surfacePrimary)
         .clipShape(RoundedRectangle(cornerRadius: TutorRadius.md))
     }

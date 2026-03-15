@@ -4,28 +4,40 @@ import TutorCore
 // MARK: - Color Tokens
 
 public enum TutorColors {
-    // Primary
-    public static let primary = Color(hex: "#007AFF")
-    public static let secondary = Color(hex: "#5856D6")
-    public static let accent = Color(hex: "#FF9500")
-    public static let success = Color(hex: "#34C759")
-    public static let warning = Color(hex: "#FF9500")
-    public static let error = Color(hex: "#FF3B30")
+    // Brand
+    public static let primary = Color(hex: "#3B82F6")       // Clean blue
+    public static let secondary = Color(hex: "#6366F1")     // Indigo
+    public static let accent = Color(hex: "#8B5CF6")        // Soft violet
+
+    // Semantic
+    public static let success = Color(hex: "#22C55E")       // Green
+    public static let warning = Color(hex: "#F59E0B")       // Amber
+    public static let error = Color(hex: "#EF4444")         // Red
 
     // Surfaces
     public static let surfacePrimary = Color(hex: "#FFFFFF")
-    public static let surfaceSecondary = Color(hex: "#F2F2F7")
-    public static let surfaceTertiary = Color(hex: "#E5E5EA")
+    public static let surfaceSecondary = Color(hex: "#F4F4F5")
+    public static let surfaceTertiary = Color(hex: "#E4E4E7")
 
     // Text
-    public static let textPrimary = Color(hex: "#000000")
-    public static let textSecondary = Color(hex: "#3C3C43", opacity: 0.6)
-    public static let textTertiary = Color(hex: "#3C3C43", opacity: 0.3)
+    public static let textPrimary = Color(hex: "#18181B")
+    public static let textSecondary = Color(hex: "#71717A")
+    public static let textTertiary = Color(hex: "#A1A1AA")
 
-    // Gamification
-    public static let xpGold = Color(hex: "#FFD700")
-    public static let streakFlame = Color(hex: "#FF6B35")
-    public static let levelPurple = Color(hex: "#AF52DE")
+    // Gamification — muted, cohesive palette
+    public static let xpGold = Color(hex: "#EAB308")        // Warm gold
+    public static let streakFlame = Color(hex: "#F97316")    // Soft orange
+    public static let levelPurple = Color(hex: "#8B5CF6")    // Matches accent
+
+    // Functional tints (for icons, badges, subtle backgrounds)
+    public static let tintBlue = Color(hex: "#3B82F6")
+    public static let tintIndigo = Color(hex: "#6366F1")
+    public static let tintViolet = Color(hex: "#8B5CF6")
+    public static let tintCyan = Color(hex: "#06B6D4")
+    public static let tintEmerald = Color(hex: "#10B981")
+    public static let tintAmber = Color(hex: "#F59E0B")
+    public static let tintRose = Color(hex: "#F43F5E")
+    public static let tintOrange = Color(hex: "#F97316")
 }
 
 // MARK: - Typography
@@ -81,9 +93,9 @@ public struct TutorShadow: Sendable {
     public let x: CGFloat
     public let y: CGFloat
 
-    public static let sm = TutorShadow(color: .black.opacity(0.05), radius: 2, x: 0, y: 1)
-    public static let md = TutorShadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
-    public static let lg = TutorShadow(color: .black.opacity(0.15), radius: 16, x: 0, y: 8)
+    public static let sm = TutorShadow(color: .black.opacity(0.04), radius: 2, x: 0, y: 1)
+    public static let md = TutorShadow(color: .black.opacity(0.06), radius: 6, x: 0, y: 2)
+    public static let lg = TutorShadow(color: .black.opacity(0.08), radius: 12, x: 0, y: 4)
 }
 
 // MARK: - Color Extension
