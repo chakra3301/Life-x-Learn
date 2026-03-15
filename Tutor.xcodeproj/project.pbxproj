@@ -75,7 +75,7 @@
 /* Begin PBXFileReference section */
 		19086057495582094F8AAD07 /* tutor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tutor; path = .; sourceTree = SOURCE_ROOT; };
 		4E4D54CDA3740E93D5DDCFD2 /* Tutor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tutor.entitlements; sourceTree = "<group>"; };
-		4EE82B8578A7781046687103 /* Tutor-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Tutor-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EE82B8578A7781046687103 /* Tutor-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tutor-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7832EE041DC408EB71DA25 /* WorkspaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceListView.swift; sourceTree = "<group>"; };
 		6C2C06BB3604CAE6E446A79C /* ChatConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConversationView.swift; sourceTree = "<group>"; };
 		70501DE2C59E2C212E11604E /* TutorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorApp.swift; sourceTree = "<group>"; };
@@ -488,7 +488,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TutorApp/Entitlements/Tutor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X429L5AGXB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Tutor;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -598,7 +600,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TutorApp/Entitlements/Tutor.entitlements;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X429L5AGXB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Tutor;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
