@@ -19,6 +19,7 @@ struct HomeDashboardView: View {
     @Query(sort: \Workspace.sortOrder) private var workspaces: [Workspace]
 
     @State private var showUpload = false
+    @State private var showJournal = false
 
     private var profile: UserProfile? { profiles.first }
     private var stats: UserStats? { profile?.stats }
@@ -47,6 +48,9 @@ struct HomeDashboardView: View {
             }
             .sheet(isPresented: $showUpload) {
                 UploadView()
+            }
+            .sheet(isPresented: $showJournal) {
+                JournalHomeView()
             }
             .onAppear { ensureProfile() }
         }
@@ -174,7 +178,7 @@ struct HomeDashboardView: View {
                     // Navigate to quiz
                 }
                 QuickActionButton(icon: "book", title: "Journal", color: .orange) {
-                    // Navigate to journal
+                    showJournal = true
                 }
             }
         }

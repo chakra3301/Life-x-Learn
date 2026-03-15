@@ -16,18 +16,23 @@
 		181E9B010AE94455A0A223B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686B3F36AD243A87EB5F558 /* ContentView.swift */; };
 		1F0A0346924E07AB7D638D50 /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046B5E8B63C32818FCE1443 /* ProfileSettingsView.swift */; };
 		21A6BADA2C5152A12896F7AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7686B3F36AD243A87EB5F558 /* ContentView.swift */; };
+		22A80DD1263E1ABE029FB921 /* MoodPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F96B90CA7FF6A53DD4E740 /* MoodPickerSheet.swift */; };
 		230A2E6BE1CBD64AECC3A453 /* WorkspaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFC2AC524ED8E476857D3F /* WorkspaceDetailView.swift */; };
 		245728FB905DB907740F55CC /* TutorGamification in Frameworks */ = {isa = PBXBuildFile; productRef = 87F9E51275C87FA40DB76E74 /* TutorGamification */; };
 		2946C084F09FCB6789F25DFF /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046B5E8B63C32818FCE1443 /* ProfileSettingsView.swift */; };
 		2B48A0FBAF458A1E082DAF70 /* TutorData in Frameworks */ = {isa = PBXBuildFile; productRef = 3530F27CEB681E4DC48AF398 /* TutorData */; };
+		2D2A75BAB29C494867DE159C /* JournalTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D9D630EE1717DFC0FFF27 /* JournalTemplates.swift */; };
 		2E5E607527AB2B7ACDCC4628 /* TutorData in Frameworks */ = {isa = PBXBuildFile; productRef = 8B41E4FEB729131C5EBFFFDD /* TutorData */; };
 		2F1C440CC3DDE3BAD5ED00FE /* WorkspaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7832EE041DC408EB71DA25 /* WorkspaceListView.swift */; };
 		302576CD9B16E01ED8D700C5 /* TutorFileProcessing in Frameworks */ = {isa = PBXBuildFile; productRef = AC473D0280E9CF156D76BF61 /* TutorFileProcessing */; };
+		3175E2F37A55450AF16D2E7C /* JournalHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF4E743D28AB6EDBB0DF8D /* JournalHomeView.swift */; };
+		37A706B067B24135F04D0B0C /* JournalEntryEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26079B0739CD97368593BC2 /* JournalEntryEditorView.swift */; };
 		3D2DFF14AE7309681521B7BC /* TutorFileProcessing in Frameworks */ = {isa = PBXBuildFile; productRef = FF2F5DAE2130434180C6D84C /* TutorFileProcessing */; };
 		3DFCBF7C4A931B7CC2AA4736 /* TutorIntegrations in Frameworks */ = {isa = PBXBuildFile; productRef = 744BB51028456668A2C55C82 /* TutorIntegrations */; };
 		440E4F6E5A8CB73DB750B01C /* TutorChat in Frameworks */ = {isa = PBXBuildFile; productRef = DCB10FD9ECBAD15BE211DDED /* TutorChat */; };
 		457B850980BBE9EC64DF720B /* TutorStudent in Frameworks */ = {isa = PBXBuildFile; productRef = C4073B95F0F4DA70FF72A903 /* TutorStudent */; };
 		48E815BE1F67961172041253 /* KnowledgeItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5063417A38542F3CAA197 /* KnowledgeItemRow.swift */; };
+		5380973C72A054C3B394D677 /* JournalTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D9D630EE1717DFC0FFF27 /* JournalTemplates.swift */; };
 		53FEA6E74883ADB71EA244C8 /* KnowledgeItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5063417A38542F3CAA197 /* KnowledgeItemRow.swift */; };
 		5B8EA993C5E21FA56FAC8A91 /* TutorStudent in Frameworks */ = {isa = PBXBuildFile; productRef = 215DD621CC272DC0E61BB682 /* TutorStudent */; };
 		632D5A92762FA455B53390FD /* TutorKnowledge in Frameworks */ = {isa = PBXBuildFile; productRef = C925CD5297942D2EB9D4437A /* TutorKnowledge */; };
@@ -36,6 +41,7 @@
 		76E26B9F27B246E91A58D757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B710E0982FCB9B3BC59F6EF7 /* Assets.xcassets */; };
 		77C270DB3D59875CF4FF0785 /* TutorChat in Frameworks */ = {isa = PBXBuildFile; productRef = B21F5571B37FCED79FEC6181 /* TutorChat */; };
 		7DB4608AAF495D6C25B92781 /* TutorData in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB5E5631A876E40FDB1E258 /* TutorData */; };
+		7F3A646819E444CF97625625 /* MoodPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F96B90CA7FF6A53DD4E740 /* MoodPickerSheet.swift */; };
 		7F99293149E8FAEA3483D89A /* HomeDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE43C652CCEE8C1BE79947 /* HomeDashboardView.swift */; };
 		8074B1ADC15144B1167C5046 /* TutorGamification in Frameworks */ = {isa = PBXBuildFile; productRef = ECDE93F7F008AC2792B77BD6 /* TutorGamification */; };
 		84CE95CD6926BB306A640522 /* ChatConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C06BB3604CAE6E446A79C /* ChatConversationView.swift */; };
@@ -45,6 +51,7 @@
 		93C1DF7B599E44FB3449F025 /* TutorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70501DE2C59E2C212E11604E /* TutorApp.swift */; };
 		9A642D35316B906CF5DD1F97 /* TutorCore in Frameworks */ = {isa = PBXBuildFile; productRef = F9C4C3B7885C42E56E203CE1 /* TutorCore */; };
 		A64581A4B9C9B0174410FAB8 /* TutorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70501DE2C59E2C212E11604E /* TutorApp.swift */; };
+		A6C838EF83304A1A4F696A7F /* JournalEntryEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26079B0739CD97368593BC2 /* JournalEntryEditorView.swift */; };
 		B0F94A8E226B4E016753D564 /* TutorUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4178A6AD255D032830347278 /* TutorUI */; };
 		B9B91D4CBB021556AEE735B4 /* TutorLife in Frameworks */ = {isa = PBXBuildFile; productRef = 131EF5E3A49DA9FD7E5D36CF /* TutorLife */; };
 		BF74A401AE9D205F70EDE890 /* TutorAI in Frameworks */ = {isa = PBXBuildFile; productRef = 119B803D374FAD5584072076 /* TutorAI */; };
@@ -60,6 +67,7 @@
 		F2E4A9824BDE4C90E0EFA01B /* TutorLearning in Frameworks */ = {isa = PBXBuildFile; productRef = 90B390BBC6F4B3B55E8F84C6 /* TutorLearning */; };
 		F525623017252A8F359D31DC /* TutorLearning in Frameworks */ = {isa = PBXBuildFile; productRef = C9E6B7EEC38C2F2D53CB6E5E /* TutorLearning */; };
 		F92DD289ABAD08373096C450 /* ChatConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2C06BB3604CAE6E446A79C /* ChatConversationView.swift */; };
+		FD493CB1FAB37D37E2FCB416 /* JournalHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF4E743D28AB6EDBB0DF8D /* JournalHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,11 +82,13 @@
 
 /* Begin PBXFileReference section */
 		19086057495582094F8AAD07 /* tutor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tutor; path = .; sourceTree = SOURCE_ROOT; };
+		28F96B90CA7FF6A53DD4E740 /* MoodPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPickerSheet.swift; sourceTree = "<group>"; };
 		4E4D54CDA3740E93D5DDCFD2 /* Tutor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tutor.entitlements; sourceTree = "<group>"; };
-		4EE82B8578A7781046687103 /* Tutor-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tutor-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EE82B8578A7781046687103 /* Tutor-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Tutor-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7832EE041DC408EB71DA25 /* WorkspaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceListView.swift; sourceTree = "<group>"; };
 		6C2C06BB3604CAE6E446A79C /* ChatConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConversationView.swift; sourceTree = "<group>"; };
 		70501DE2C59E2C212E11604E /* TutorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorApp.swift; sourceTree = "<group>"; };
+		710D9D630EE1717DFC0FFF27 /* JournalTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTemplates.swift; sourceTree = "<group>"; };
 		7686B3F36AD243A87EB5F558 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7AD5063417A38542F3CAA197 /* KnowledgeItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeItemRow.swift; sourceTree = "<group>"; };
 		8046B5E8B63C32818FCE1443 /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
@@ -86,9 +96,11 @@
 		8BFFC2AC524ED8E476857D3F /* WorkspaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceDetailView.swift; sourceTree = "<group>"; };
 		8C3BBE8935934806F9C143AB /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		965923250E3FBB5429AC70A2 /* Tutor-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tutor-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26079B0739CD97368593BC2 /* JournalEntryEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryEditorView.swift; sourceTree = "<group>"; };
 		B710E0982FCB9B3BC59F6EF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B84468EF58478041B9BD4E34 /* TutorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorAppTests.swift; sourceTree = "<group>"; };
 		BBC2B9D6845B18FCACFC047C /* TutorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TutorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBF4E743D28AB6EDBB0DF8D /* JournalHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +175,7 @@
 			children = (
 				5A61BE48BDD38AD0567E444B /* Chat */,
 				A139D1B2C4E7083545671EC2 /* Home */,
+				D0EA7BC96DF79A913CF0819F /* Journal */,
 				BF90142AD89CA72F5AA2FF84 /* Profile */,
 				D0FD636C5C06CA70A444CD97 /* Upload */,
 				ADB39A5A6555FD0807E487A7 /* Workspaces */,
@@ -239,6 +252,17 @@
 				8046B5E8B63C32818FCE1443 /* ProfileSettingsView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		D0EA7BC96DF79A913CF0819F /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				A26079B0739CD97368593BC2 /* JournalEntryEditorView.swift */,
+				FDBF4E743D28AB6EDBB0DF8D /* JournalHomeView.swift */,
+				710D9D630EE1717DFC0FFF27 /* JournalTemplates.swift */,
+				28F96B90CA7FF6A53DD4E740 /* MoodPickerSheet.swift */,
+			);
+			path = Journal;
 			sourceTree = "<group>";
 		};
 		D0FD636C5C06CA70A444CD97 /* Upload */ = {
@@ -421,7 +445,11 @@
 				84CE95CD6926BB306A640522 /* ChatConversationView.swift in Sources */,
 				181E9B010AE94455A0A223B4 /* ContentView.swift in Sources */,
 				7F99293149E8FAEA3483D89A /* HomeDashboardView.swift in Sources */,
+				37A706B067B24135F04D0B0C /* JournalEntryEditorView.swift in Sources */,
+				FD493CB1FAB37D37E2FCB416 /* JournalHomeView.swift in Sources */,
+				5380973C72A054C3B394D677 /* JournalTemplates.swift in Sources */,
 				53FEA6E74883ADB71EA244C8 /* KnowledgeItemRow.swift in Sources */,
+				22A80DD1263E1ABE029FB921 /* MoodPickerSheet.swift in Sources */,
 				2946C084F09FCB6789F25DFF /* ProfileSettingsView.swift in Sources */,
 				93C1DF7B599E44FB3449F025 /* TutorApp.swift in Sources */,
 				1754D1A63C03B3B8249D8974 /* UploadView.swift in Sources */,
@@ -437,7 +465,11 @@
 				F92DD289ABAD08373096C450 /* ChatConversationView.swift in Sources */,
 				21A6BADA2C5152A12896F7AF /* ContentView.swift in Sources */,
 				64EE8E5F8C6E2041003805D4 /* HomeDashboardView.swift in Sources */,
+				A6C838EF83304A1A4F696A7F /* JournalEntryEditorView.swift in Sources */,
+				3175E2F37A55450AF16D2E7C /* JournalHomeView.swift in Sources */,
+				2D2A75BAB29C494867DE159C /* JournalTemplates.swift in Sources */,
 				48E815BE1F67961172041253 /* KnowledgeItemRow.swift in Sources */,
+				7F3A646819E444CF97625625 /* MoodPickerSheet.swift in Sources */,
 				1F0A0346924E07AB7D638D50 /* ProfileSettingsView.swift in Sources */,
 				A64581A4B9C9B0174410FAB8 /* TutorApp.swift in Sources */,
 				D23FCE37A679203E094F6858 /* UploadView.swift in Sources */,
@@ -488,9 +520,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TutorApp/Entitlements/Tutor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X429L5AGXB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Tutor;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -600,9 +630,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TutorApp/Entitlements/Tutor.entitlements;
 				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X429L5AGXB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Tutor;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
